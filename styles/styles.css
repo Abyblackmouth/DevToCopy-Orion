@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  justify-content: center;
+  padding: 20px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 48px;
+  }
+}
+footer .footer-rev {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-rev .footer-rev__text {
+  line-height: 1.25rem;
+  margin: 0;
+  text-align: center;
+}
+footer .footer-rev .bold-anchor {
+  font-weight: 500;
+}
+footer .list-container {
+  display: flex;
+  justify-content: center;
+}
+footer .list-container .footer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  justify-content: center;
+  list-style: none;
+  margin: 14px 0px 0px 0px;
+  padding: 0;
+}
+footer .list-container .footer-list .footer-list__item {
+  align-items: center;
+  display: flex;
+}
+footer .list-container .footer-list .footer-list__item .normal-anchor {
+  font-weight: 400;
+}
+footer .list-container .footer-list .footer-list__item .mid-dot {
+  background-color: #575757;
+  border-radius: 50%;
+  height: 4px;
+  margin-left: 8px;
+  width: 4px;
+}
+footer .credits-container .footer-credits {
+  line-height: 1.25rem;
+  margin: 14px 0px 0px 0px;
+  text-align: center;
+}
+footer .credits-container .footer-credits--nm {
+  margin: 0;
+}
+
+.bold-anchor, .normal-anchor {
+  text-decoration: none;
+  color: #3b49df;
+}/*# sourceMappingURL=styles.css.map */
