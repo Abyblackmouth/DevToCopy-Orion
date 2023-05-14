@@ -1,0 +1,30 @@
+.nav__container{
+    border-bottom: solid black;
+}
+.button__nav {
+    width: 150px;
+}
+
+.nav__form{
+    width: 100%;
+}
+.nav__input--search{
+    width: 400px;
+    border: solid 1px;
+    border-radius: 7px;
+    border-color: rgb(175, 175, 175);
+    padding-left: 10px;
+}
+
+.nav__input--icon{
+    margin-left: 1rem;
+    display: flex;
+    align-content: center;
+}
+.nav__input--profile{
+    width: 38px;
+    height: 100%;
+    border: solid;
+    border-radius: 360px;
+}
+
