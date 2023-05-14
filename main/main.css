@@ -21,11 +21,14 @@
   font-weight: 100;
 }
 
-.casiopea_art__article-small-inf .casiopea_art__information_name {
+.casiopea_art__main-post-2 {
+  background-color: white;
+}
+.casiopea_art__main-post-2 .casiopea_art__information_name {
   width: 278px;
   height: 18px;
 }
-.casiopea_art__article-small-inf .casiopea_art__information_date {
+.casiopea_art__main-post-2 .casiopea_art__information_date {
   width: 100px;
   height: 18px;
 }
