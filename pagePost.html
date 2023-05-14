@@ -55,7 +55,64 @@
               <article class="post__title">
                 <h1>Mobile-to-Desktop Menu in 2 Lines of CSS</h1>
                 <p><span>#webdev</span><span>#css</span><span>tutorial</span><span>#javasceript</span></p>
-              </article>
+                <section>
+                  <p>
+                    As a frontend developer, I've created numerous menus over the years. These menus have typically been the most intricate element of a website, incorporating mobile interactions, desktop transitions, item reordering, and more. In one instance, I built a mega-menu for a client that was so expansive, users mistook it for an entire webpage due to its full-page coverage.
+                  </p>
+                  <p>
+                    However, in my most recent project, I aimed for simplicity by utilizing some of the latest and greatest CSS features available.
+                                        
+                  </p>
+                  <p>
+                    Let's dive in!
+                  </p>
+                </section>
+                <hr >
+                <section>
+                  <h3>Structure</h3>
+                  <p>
+                    For the markup, the simplest structure I could come up with, that still supported the flexibility needed to go from a mobile flyout to a desktop-menu, was this:
+                  </p>
+                  <img src="./img/imgCodigo1.png" alt="" class="img-fluid rounded mx auto d-block">
+                  <p>
+                    We'll add more classes and stuff later, but this is the basic structure. This version will wor <b>   without any JavaScript </b>, but has an accessibility-issue, we'll look into later as well.
+                  </p>
+                  <p>
+                    The main element, <span> &lt;header&gt;</span> is a flex-container, using justify-content: space-between to place the logo left and the toggler right:
+                  </p>
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--9GoYFL0A--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tejyrzfa062x8psal213.png" alt="" class="img-fluid rounded mx auto d-block">
+
+                  <p>
+                    .menu-flyout is the container for two navigation-blocks: one with the main menu-items, and one with CTA's (call-to-actions).
+                  </p>
+                  <p>
+                    The flyout will cover the whole screen when visible, but otherwise be placed off-screen:                    
+                  </p>
+                  <img src="./img/imgCodigo2.png" alt="" class="img-fluid rounded mx auto d-block">
+
+                  <p>
+                    The navigation blocks are both flex-containers with flex-direction set to a custom property:
+                  </p>
+
+                  <img src="./img/imgCodigo3.png" alt="" class="img-fluid rounded mx auto d-block">
+                  <p>
+                    The second navigation block is placed at the bottom, using justify-content: end:
+                  </p>
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7nDfL2dZ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gq78l4h8tl2rhh5fy6h5.png" alt="" class="img-fluid rounded mx auto d-block" >
+
+                  <p>
+                    The toggler is just a styled &lt;input type="checkbox"&gt;. We can use this to reveal the flyout when clicked:
+                  </p>
+                  
+                  <img src="./img/imgCodigo4.png" alt="" class="img-fluid rounded mx auto d-block" >
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--dkrsAuID--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jcunvin3sc6z3v85aa9g.png" alt="" class="img-fluid rounded mx auto d-block">
+
+
+
+                  
+
+                </section>
+              </article>           
           </main>
           <aside class="col-xl-3 d-none  d-xl-block " >
             ASIDE RIGHT
