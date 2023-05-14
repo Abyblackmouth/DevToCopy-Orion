@@ -12,4 +12,12 @@
 
 .under-text__second {
   font-size: 14px;
+}
+
+.text-link-color {
+  color: #2f3640;
+}
+
+.text-link-color:hover {
+  color: blue;
 }/*# sourceMappingURL=styles-aside-right.css.map */
