@@ -1,12 +1,15 @@
-* {
-  background-color: aqua;
-}
-
 .aside-right {
   width: 250px;
 }
 
-.body__text-link {
-  color: black;
-  text-decoration: none;
+.body__text {
+  padding: 20px 0px 1px 0px;
+}
+
+.card-links {
+  background-color: white;
+}
+
+.under-text__second {
+  font-size: 14px;
 }/*# sourceMappingURL=styles-aside-right.css.map */
