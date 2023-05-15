@@ -28,3 +28,10 @@
     border-radius: 360px;
 }
 
+.aside__list--item{
+    :hover{
+        background-color: rgb(223, 218, 250);
+        text-decoration:underline;
+    }
+}
+
