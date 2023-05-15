@@ -38,4 +38,12 @@
   background-color: #dfdafa;
   text-decoration: underline;
 }
+
+.socialNet-icon {
+  color: #747474;
+}
+
+.socialNet-icon:hover {
+  color: #2d3af0 !important;
+}
 /*# sourceMappingURL=navbar.css.map */
