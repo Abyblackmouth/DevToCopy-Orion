@@ -16,7 +16,7 @@ main .principal__img {
 .aside__margingtop--blue {
   width: 100%;
   height: 40px;
-  background-color: blue;
+  background-color: #1e67dd;
 }
 
 .asideright__photo--top {
@@ -31,4 +31,21 @@ main .principal__img {
 
 .aside__botton--follow {
   width: 100%;
+}
+
+/*footer*/
+.footer-container {
+  font-size: 14px;
+  color: #404040;
+}
+
+.footer-rev__bold-a,
+.normal-anchor {
+  color: #3b49df;
+}
+
+.mid-dot {
+  height: 4px;
+  margin-left: 8px;
+  width: 4px;
 }/*# sourceMappingURL=styles.css.map */
