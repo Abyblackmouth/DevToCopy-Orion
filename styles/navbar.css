@@ -46,4 +46,8 @@
 .socialNet-icon:hover {
   color: #2d3af0 !important;
 }
+
+.nav__search--input :focus {
+  border: none;
+}
 /*# sourceMappingURL=navbar.css.map */
