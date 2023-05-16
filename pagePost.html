@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>DevToCopy</title>
+</head>
+<body>
+  <header>
+    <nav>
+      
+      <!--Abraham-->
+    </nav>
+  </header>
+    <div class="container">
+        <div class="row  ms-3 me-3">
+          <aside class="col-md-1 d-none d-sm-none d-md-block d-flex flex-column mt-5 mb-3 ms-5  fixed-top" >
+             <figure>
+                <img src="./img/icono-corazon.svg" alt="">
+             </figure>
+             <figure>
+                <img src="./img/text-figure.svg" alt="">
+             </figure>
+             <figure>
+                <img src="./img/condecoration-img.svg" alt="">
+             </figure>
+             <figure>
+                <img src="./img/threePoints.svg" alt="">
+              </figure>
+          </aside>
+
+          <main class="col-12 col-md-11 col-xl-8 ml-3 mt-3 ms-1 me-1" >
+            
+              <figure>
+                <img src="./img/img-principal.webp" alt="" class="principal__img">
+
+                <figcaption class="mt-4 ms-4 d-flex" >
+                  <figure class="ms-2">
+                    <img src="./img/main_photo_autor.webp" alt="" class="rounded-circle">
+                  </figure>
+                  <div class="ms-2">
+                    <h5>Mads Stoumann</h5>
+                    <p>posted on 13 may</p>
+                  </div>
+                </figcaption>
+                <div class="ms-5">
+                  <img src="./img/heart.svg" alt="" class="me-5">
+                  <img src="./img/unicorn.svg" alt="" class="me-5">
+                  <img src="./img/fire.svg" alt="">
+                </div>
+              </figure>
+              <article class="post__title">
+                <h1>Mobile-to-Desktop Menu in 2 Lines of CSS</h1>
+                <p><span>#webdev</span><span>#css</span><span>tutorial</span><span>#javasceript</span></p>
+                <section>
+                  <p>
+                    As a frontend developer, I've created numerous menus over the years. These menus have typically been the most intricate element of a website, incorporating mobile interactions, desktop transitions, item reordering, and more. In one instance, I built a mega-menu for a client that was so expansive, users mistook it for an entire webpage due to its full-page coverage.
+                  </p>
+                  <p>
+                    However, in my most recent project, I aimed for simplicity by utilizing some of the latest and greatest CSS features available.
+                                        
+                  </p>
+                  <p>
+                    Let's dive in!
+                  </p>
+                </section>
+                <hr >
+                <section>
+                  <h3>Structure</h3>
+                  <p>
+                    For the markup, the simplest structure I could come up with, that still supported the flexibility needed to go from a mobile flyout to a desktop-menu, was this:
+                  </p>
+                  <img src="./img/imgCodigo1.png" alt="" class="img-fluid rounded mx auto d-block">
+                  <p>
+                    We'll add more classes and stuff later, but this is the basic structure. This version will wor <b>   without any JavaScript </b>, but has an accessibility-issue, we'll look into later as well.
+                  </p>
+                  <p>
+                    The main element, <span> &lt;header&gt;</span> is a flex-container, using justify-content: space-between to place the logo left and the toggler right:
+                  </p>
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--9GoYFL0A--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tejyrzfa062x8psal213.png" alt="" class="img-fluid rounded mx auto d-block">
+
+                  <p>
+                    .menu-flyout is the container for two navigation-blocks: one with the main menu-items, and one with CTA's (call-to-actions).
+                  </p>
+                  <p>
+                    The flyout will cover the whole screen when visible, but otherwise be placed off-screen:                    
+                  </p>
+                  <img src="./img/imgCodigo2.png" alt="" class="img-fluid rounded mx auto d-block">
+
+                  <p>
+                    The navigation blocks are both flex-containers with flex-direction set to a custom property:
+                  </p>
+
+                  <img src="./img/imgCodigo3.png" alt="" class="img-fluid rounded mx auto d-block">
+                  <p>
+                    The second navigation block is placed at the bottom, using justify-content: end:
+                  </p>
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7nDfL2dZ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gq78l4h8tl2rhh5fy6h5.png" alt="" class="img-fluid rounded mx auto d-block" >
+
+                  <p>
+                    The toggler is just a styled &lt;input type="checkbox"&gt;. We can use this to reveal the flyout when clicked:
+                  </p>
+                  
+                  <img src="./img/imgCodigo4.png" alt="" class="img-fluid rounded mx auto d-block" >
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--dkrsAuID--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jcunvin3sc6z3v85aa9g.png" alt="" class="img-fluid rounded mx auto d-block">
+                  <p>
+                    Since the toggler is wrapped in a label, we can use this to hide it on desktop:
+                  </p>
+
+                  <img src="./img/imgCodigo5.png" alt="" class="img-fluid rounded mx auto d-block">
+                  <p>
+                    <span>NOTE:</span> Don't worry, everything will have classes in the final examples, it's just to simplify the examples, that I use plain tags!
+                  </p>
+                  <hr>
+
+                  <p>
+                    So far, so good. When we resize the screen to desktop, we get:
+                  </p>
+
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--LFoZ49QL--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7ii6fbddnpnr1wxcuwdw.png" alt="">
+                 
+
+                </section>
+              </article>  
+              <article>
+                <h2>Top Comments(7)</h2>
+              </article>         
+          </main>
+          <aside class="col-xl-3 d-none  d-xl-block mt-3 " >
+            <section>
+              <article class="aside__margingtop--blue">
+                <div class="aside__margingtop--blue" ></div>
+                
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--hCHv9XnP--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/515396/61d796b8-f5ce-468b-8cb5-808b2bbb9279.jpeg" alt="" class="rounded-circle  asideright__photo--top">
+               
+                <h4 class="aside__name--autor">Mads Stoumann</h4>
+                <button type="button" class="btn btn-primary btn-lg mt-5 aside__botton--follow">Follow</button>
+                <p>
+                  I'm a web developer, graphic designer, type designer, musician, comicbook-geek, LEGO-collector, food lover … as well as husband and father, located just south of Copenhagen, Denmark.
+                </p> 
+                <div>
+                <h5>LOCATION</h5> 
+                <p>Copenhagen</p>
+                <h5>WORK</h5>
+                <p>Co-Founder at Perfection.DEV</p>
+                <h5>JOINED</h5>
+                <p>16 nov 2020</p>
+                </div>
+
+                <article>
+                  <h5>More from Mads Stoumann</h5>
+                  <p></p>
+
+                </article>
+                
+              </article>
+                          
+            </section> 
+             
+           
+
+            
+
+          
+
+          </aside>
+        </div>
+    </div>
+  
+  
+<footer class="container-fluid p-3 p-md-5 ">
+      <div class="footer-container lh-base row-gap-3 m-1 m-md-0 d-flex flex-column">
+          <p class="footer-rev m-0 d-block text-center">
+          <a href="" class="footer-rev__bold-a fw-semibold link-underline link-underline-opacity-0 link-underline-opacity-75-hover">DEV Community</a>
+          — A constructive and inclusive social network for software developers. With you every step of your journey.        
+        </p>
+        <ul class="footer-list p-0 m-0 d-flex flex-wrap row-gap-3 justify-content-center list-inline">
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Home </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Listings </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Podcasts </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Videos </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Tags </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> FAQ </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Forem Shop </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Sponsors </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> About </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Contact </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Guides </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Software comparisons </a>
+          </li>
+        </ul>
+        <ul class="footer-list p-0 m-0 d-flex flex-wrap justify-content-center list-inline">
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Code of Conduct </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Privacy Policy </a>
+            <span class="mid-dot rounded-circle bg-dark"></span>
+          </li>
+          <li class="footer-list__item d-flex align-items-center list-inline-item ">
+            <a class="normal-anchor text-decoration-none" href=""> Terms of use </a>
+          </li>
+        </ul>
+        <div class="credits-container">
+          <p class="footer-credits m-0 d-block text-center">
+            Built on
+          <a class="normal-anchor link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Forem</a>
+          — the
+          <a class="normal-anchor link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">open source</a>
+          software that powers
+          <a class="normal-anchor link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">DEV</a>
+          and other inclusive communities.
+        </p>
+        <p class="footer-credits m-0 d-block text-center">
+          Made with love and
+          <a class="normal-anchor link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Ruby on Rails.</a>
+          DEV Community © 2016 - 2023.
+        </p>
+      </div>
+      </div>
+</footer>   
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>
