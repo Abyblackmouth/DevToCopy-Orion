@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+.kook-art__menu {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.kook-art__menu_nav--list{
+    kook-art__list-three {
+    list-style-type: none;
+    }
+}
+
+
+.casiopea__img-user{
+    width: 32px;
+    height: 32px;
+}
+
+.casiopea_art__article-info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.casiopea_art__article-small-inf{
+
+.casiopea_art__information_name{
+    width: 278px;
+    height: 18px;
+}
+
+.casiopea_art__information_date{
+    width: 100px;
+    height: 18px;
+}
+
+}
+
+.lepus_art__main_post-2{
+    .lepus_art__title-article{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight:bold;
+    }
+}
+
+.lepus_lnk-cat-tag {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+
+    .lepus__cat--tag-p{
+        color:red;
+    }
+
+    .lepus__cat--tag-pr{
+        color: blue;
+    }
+
+    .lepus__cat--tag-tut{
+        color: blueviolet;
+    }
+
+    .lepus__cat--tag-fun{
+        color:green;
+    }
+}
+
