@@ -19,6 +19,8 @@ main .principal__img {
     margin-right: 15px ;
 }
 
+
+
 .aside__margingtop--blue {
     width: 100%;
     height: 40px;
@@ -37,6 +39,35 @@ main .principal__img {
 
 .aside__botton--follow{
     width: 100%;
+}
+
+/* Comments Section */
+.comments_button--subscribe {
+    border: solid 1px rgb(175, 175, 175);
+}
+
+.comments__textarea {
+    width: 92%;
+   
+}
+
+.comment__photo--subscribe {
+   width: 7%;
+   height: 7%;
+}
+
+.comments__img--compu {
+    width: 7%;
+   height: 7%;
+}
+
+.aside_anchor--style a {
+    text-decoration: none;
+    color: black;
+}
+
+.aside_anchor--style--name a {
+    text-decoration: none;
 }
 
 /*footer*/
