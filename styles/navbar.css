@@ -1,5 +1,5 @@
 .nav__container {
-  border-bottom: solid #cccccc;
+  border-bottom: solid rgb(204, 204, 204);
 }
 
 .button__nav {
@@ -14,17 +14,14 @@
   width: 400px;
   border: solid 1px;
   border-radius: 7px;
-  border-color: #afafaf;
+  border-color: rgb(175, 175, 175);
   padding-left: 10px;
 }
 
 .nav__input--icon {
   margin-left: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .nav__input--profile {
@@ -35,12 +32,12 @@
 }
 
 .aside__list--item :hover {
-  background-color: #dfdafa;
+  background-color: rgb(223, 218, 250);
   text-decoration: underline;
 }
 
 .socialNet-icon {
-  color: #747474;
+  color: rgb(116, 116, 116);
 }
 
 .socialNet-icon:hover {
@@ -49,5 +46,4 @@
 
 .nav__search--input :focus {
   border: none;
-}
-/*# sourceMappingURL=navbar.css.map */
+}/*# sourceMappingURL=navbar.css.map */
