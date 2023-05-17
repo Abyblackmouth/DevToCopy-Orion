@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <header>
+  <header class="sticky-top">
     <nav
-      class="navbar flex-nowrap navbar-expand-lg bg-body-light shadow-sm container-fluid d-flex p-2 justify-content-between align-items-center nav__container border-bottom">
+      class="navbar flex-nowrap navbar-expand-lg bg-body-light shadow-sm container-fluid d-flex p-2 justify-content-between align-items-center nav__container border-bottom bg-white">
       <div class="row">
         <div class="col-4">
           <div class="row">
@@ -210,12 +210,14 @@
         <div class="container ">
           <div class="row justify-content-md-end d-flex align-items-center">
             <!-- barra buscar  -->
-            <div class="col-md-4 rounded-2 bg-light ">
-              <input class=" border border-secondary rounded-2 p-2 w-75 bg-light nav__search--input" type="text" name=""
+            <div class="col-md-4 rounded-2 d-flex">
+              <input class=" border border-secondary rounded-2 p-2 w-100 nav__search--input" type="text" name=""
                 placeholder="Search..." autocomplete="off" aria-label="Search term">
-              <button style="position: relative; right: 49px;" class="bg-light border-0 mt-1" type="submit"
+
+              <button style="position: relative; right: 49px; height: 24px; margin-top: 5px;" class="bg-light border-0" type="submit"
                 aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0">
-                <svg class="bg-light" xmlns="http://www.w3.org/2000/svg" width="30" height="30" aria-hidden="true"
+                
+                <svg class="bg-light" xmlns="http://www.w3.org/2000/svg" width="30" height="25" aria-hidden="true"
                   class="" focusable="false">
                   <path
                     d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z">
