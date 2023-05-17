@@ -1,14 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
-.kook-art__menu {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+.link-h2 {
+  text-decoration: none;
   color: black;
 }
 
-.kook-art__menu_nav--list kook-art__list-three {
-  list-style-type: none;
+.link-h2:hover {
+  color: rgb(5, 5, 168);
+}
+
+.dreco_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: -10px;
+  border-color: white;
+}
+
+.dreco_cont_hov:hover {
+  background-color: rgba(238, 238, 239, 0.684);
+  border-radius: 4px;
+}
+
+.dreco_cont_hov-com:hover {
+  background-color: rgba(238, 238, 239, 0.684);
+  border-radius: 4px;
+}
+
+.kook-art__list--one {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.kook-art__list--one:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: blue;
+}
+
+.kook-art__list-tw:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: blue;
+}
+
+.kook-art__list-thr:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: blue;
+}
+
+.casiopea_art__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .casiopea__img-user {
@@ -21,14 +67,10 @@
   font-weight: 100;
 }
 
-.casiopea_art__main-post-2 {
-  background-color: white;
-}
-.casiopea_art__main-post-2 .casiopea_art__information_name {
+.casiopea_art__article-small-inf .casiopea_art__information_name {
   width: 278px;
   height: 18px;
 }
-
 .casiopea_art__article-small-inf .casiopea_art__information_date {
   width: 100px;
   height: 18px;
@@ -48,20 +90,15 @@
   text-decoration: none;
   margin-left: 20px;
 }
-
 .lepus_lnk-cat-tag .lepus__cat--tag-p {
   color: red;
 }
-
 .lepus_lnk-cat-tag .lepus__cat--tag-pr {
   color: blue;
 }
-
 .lepus_lnk-cat-tag .lepus__cat--tag-tut {
   color: blueviolet;
 }
-
 .lepus_lnk-cat-tag .lepus__cat--tag-fun {
   color: green;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
