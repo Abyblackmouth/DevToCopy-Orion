@@ -1,6 +1,15 @@
 .nav__container {
   border-bottom: solid rgb(204, 204, 204);
+    
+} 
+
+@media (min-width: 1200px) {
+  .nav__logo {
+    position: relative;
+    left: 155px;
+  }
 }
+
 
 .button__nav {
   width: 150px;
