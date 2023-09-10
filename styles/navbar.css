@@ -1,15 +1,6 @@
 .nav__container {
-  border-bottom: solid rgb(204, 204, 204);
-    
-} 
-
-@media (min-width: 1200px) {
-  .nav__logo {
-    position: relative;
-    left: 155px;
-  }
+  border-bottom: solid #cccccc;
 }
-
 
 .button__nav {
   width: 150px;
@@ -23,14 +14,17 @@
   width: 400px;
   border: solid 1px;
   border-radius: 7px;
-  border-color: rgb(175, 175, 175);
+  border-color: #afafaf;
   padding-left: 10px;
 }
 
 .nav__input--icon {
   margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .nav__input--profile {
@@ -41,12 +35,12 @@
 }
 
 .aside__list--item :hover {
-  background-color: rgb(223, 218, 250);
+  background-color: #dfdafa;
   text-decoration: underline;
 }
 
 .socialNet-icon {
-  color: rgb(116, 116, 116);
+  color: #747474;
 }
 
 .socialNet-icon:hover {
@@ -54,5 +48,6 @@
 }
 
 .nav__search--input :focus {
-  border: none;
-}/*# sourceMappingURL=navbar.css.map */
+  border-color: #2d3af0;
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/main/main.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/postContainer.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="./js/api.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">  
+    <script src="./js/post.js"></script>
   <title>DevToCopy</title>
 </head>
-
 <body>
   <header class="sticky-top  bg-white">
     <nav
@@ -379,128 +381,457 @@
           </span>
         </div>
       </aside>
-      <div class="column col-12 col-md-9 col-lg-6">
 
-        <!--Section Main Articles -->
-        <main class="p-0 container-fluid bg-body-secondary">
+      <main class="column col-12 col-md-9 col-lg-6">
+        
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+             <button class="nav-link active" id="relevant-tab" data-bs-toggle="tab" data-bs-target="#relevant" type="button"
+                role="tab" aria-controls="relevant" aria-selected="true">Relevant</button>
+          </li>
+          <li class="nav-item" role="presentation">
+             <button class="nav-link" id="latest-tab" data-bs-toggle="tab" data-bs-target="#latest" type="button" role="tab"
+                aria-controls="latest" aria-selected="false">Latest</button>
+          </li>
+          <li class="nav-item" role="presentation">
+             <button class="nav-link" id="top-tab" data-bs-toggle="tab" data-bs-target="#top" type="button" role="tab"
+                aria-controls="top" aria-selected="false">Top</button>
+          </li>
+       </ul>
+    
+       <div class="tab-content" id="myTabContent">
+    
+          <div class="tab-pane fade show active" id="relevant" role="tabpanel" aria-labelledby="relevant-tab">  <!--INICIA PESTAÑA RELEVANT-->
+              <section id="cards-container">
 
-          <div class="px-3 py-3 container d-flex flex-column d orion__main-box-post" >
-          <div class="px-0 containerkook-art__main">
-              <div class="p-0 pb-2 container-fluid kook-art__articles-main">
-                  <header class="p-0 kook-art__main ">
-                      <nav class="nav">
-                          <ul class="nav kook-art__list--three">
-                              <li class="nav-items kook-art__list--one">
-                                  <a class="text-reset mx-0 my-0 nav-link active" href="/error-404.html">Relevant</a>
-                              </li>
-                              <li class="nav-items kook-art__list-tw">
-                                  <a class="text-reset mx-0 my-0 nav-link active" href="/error-404.html">Latest</a>
-                              </li>
-                              <li class="nav-items kook-art__list-thr">
-                                  <a class="text-reset mx-0 my-0 nav-link active" href="/error-404.html">Top</a>
-                              </li>
-                          </ul>
-                      </nav>
-                  </header>
-              </div>
-          </div>
-          <!-- MAIN IMAGE POST-->
-          <div class="p-0 container-fluid rounded-4 border border-secondary-subtle" id="cards-container" >
-          <div class="p-0 container-fluid casiopea_art__main-post-1">
-              <div class="p-0 container rounded-top-4 casiopea_art_post-one">
-                  <a href="/error-404.html">
-                      <img class="img-fluid p-0 rounded-top-4 d-flex align-items-end" src="/img-main/main-post.webp" alt="image-post">
-                  </a>
-              </div>
-          </div>
-          <!-- INFORMATION MAIN POST-->
-          <div class="container p-0 pb-3 mb-0 bg-white rounded-bottom-4 casiopea_art__main-post-2">
-              <div class="casiopea_art__main">
-                  <div class="px-3 container casiopea_art__main-info">
-                      <div class="px-0 mx-0 container casiopea_art__article-info">
-                          <div class="px-0 pt-2 pb-2 d-flex flex-row container casiopea_art__user">
-                              <div class="pt-2 ocasiopea__img-box">
-                                  <img class="rounded-circle casiopea__img-user" src="/img-main/user_1.png" alt="user_1">
-                              </div>
-                              <div class="d-flex flex-column justify-content-between container casiopea_art__article-small-inf">
-                                  <div class="fs-6 casiopea_art__information_name">
-                                      <p class="pb-0 ">Alexandra Bosayo</p>
+                <!-----------------------AQUI VAN LAS CARDSS-------------------------->
+
+              </section>
+          </div> <!--TERMINA PESTAÑA RELEVANT-->
+    
+          <div class="tab-pane fade" id="latest" role="tabpanel" aria-labelledby="latest-tab"> <!--INICIA PESTAÑA LATEST-->
+             <div class="card card-body"> <!--INICIA CARD 6-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div class="cover-container">
+                            <img class="cover-container__image" src="/images/main/Chris Bongers post.webp" height="250px" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Chris Bongers.webp" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Chris Bongers</h6>
+                               <p class="m-0 ms-2">May 3</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3> <a class="card__tittle" href="" target="_blank">Handling errors in Remix</a></h3>
+                            <div>
+                               <a href="">#react</a>
+                               <a href=""></a>
+                               <a href=""></a>
+                               <a href=""></a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 2 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt=""> Add Comment</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">2 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
                                   </div>
-                                  <div class="fs-6 casiopea_art__information_date">
-                                      <p class="fs-6 casiopea_art__name">May 15</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 6-->
+    
+             <div class="card card-body"> <!--INICIA CARD 7-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Daniel.webp" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Daniel</h6>
+                               <p class="m-0 ms-2">May 3</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">How to Study for your Programming Interview</h3>
+                            <div>
+                               <a href="">#help</a>
+                               <a href="">#programing</a>
+                               <a href="">#beginners</a>
+                               <a href=""></a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                      <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 62 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt=""> Add Comment</button>
+                                   </div>
+                                     <button class="card__nobg-button card__read-button">1 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
                                   </div>
-                              </div>
-                          </div>
+                               </div>
+                            </div>
+                         </div>
                       </div>
-                  </div>
-              </div>
-              <!-- TITLE POST AND LINKS -->
-              <div class="p-1 px-3 container lepus_art__main_post-2">
-                  <a class="link-h2" href="/error-404.html"><H2 class="lepus_art__title-article">What Are *args And **kwargs In Python - Guide With Examples</H2></a> 
-                  <div class="px-0 d-flex flex-row lepus_art__cat--tags">
-                      <a class="lepus_lnk-cat-tag" href="/error-404.html">
-                          <span class="lepus__cat--tag-p">#</span>python</a>
-                      <a class="lepus_lnk-cat-tag" href="/error-404.html">
-                          <span class="lepus__cat--tag-pr">#</span>programming</a>
-                      <a class="lepus_lnk-cat-tag" href="/error-404.html">
-                          <span class="lepus__cat--tag-tut">#</span>tutorial</a>
-                      <a class="lepus_lnk-cat-tag" href="/error-404.html">
-                          <span class="lepus__cat--tag-fun">#</span>function</a>
-                  </div>
-                  <!-- EMOJIS, COMMENTS, BOOKMARK -->
-                  <div class="px-1 py-2 pt-4 container d-flex justify-content-between Draco_art__emo-com-book">
-                      <div class="p-0 d-flex align-items-center Draco_art__emojis-fun">
-                        <div class="dreco_cont_hov ps-2 pe-2 py-1 d-flex">
-                          <span class="object-fit-scale dreco_box align-items-center rounded-circle bg-secondary-subtle">
-                              <img class="object-fit-none" src="/img-main/unicorn.svg"  alt="emoji-unicorn">
-                          </span>
-                          <span class="dreco_box rounded-circle bg-secondary-subtle">
-                              <img class="object-fit-none" src="/img-main/fire.svg" alt="emoji-fire">
-                          </span>
-                          <span class="dreco_box align-items-center rounded-circle bg-secondary-subtle">
-                              <img class="object-fit-none" src="/img-main/spark-heart.svg" alt="emoji-heart">
-                          </span>
-                          <span class="px-4 pe-2 list-inline-item">
-                              8
-                          </span>
-                        </div>
-                        <div class="dreco_cont_hov-com py-1 d-flex">
-                          <span>
-                              <img class="px-1" src="/img-main/comment.svg" alt="icon_comments"> 
-                          </span>
-                          <span class="pe-2">
-                              10 
-                          </span>
-                        </div>
-                          </div>
-                          <div class="p-0 px-1 container d-flex align-items-center justify-content-end Draco_art__emojis-book">
-                              <span class="px-4">1 min read</span>
-                              <img class="object-fit-none" src="/img-main/bookmark.svg" alt="icon_book">
-                          </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 7-->
+    
+             <div class="card card-body"> <!--INICIA CARD 8-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Benjamin cisneros.jpeg" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Benjamin Alvarado</h6>
+                               <p class="m-0 ms-2">May 3</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">How do you commit on github???</h3>
+                            <div>
+                               <a href="">#push</a>
+                               <a href="">#github</a>
+                               <a href=""></a>
+                               <a href=""></a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 99 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt=""> 17 comments</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">1 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
                       </div>
-                  </div>
-              </div>
-            </div>
-<!-- DEV INFORMATION POST -->
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 8-->
+    
+             <div class="card card-body"> <!--INICIA CARD 9-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Davide Coder Dave.webp" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Davide 'CoderDave' Benvergnú</h6>
+                               <p class="m-0 ms-2">May 1</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">No More VPN! Securely Connect to Private Resources with Twingate [Step-by-Step]</h3>
+                            <div>
+                               <a href="">#cloud</a>
+                               <a href="">#networking</a>
+                               <a href="">#zerotrust</a>
+                               <a href="">#security</a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt="">2 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/post/coments.svg" alt="">Add Comment</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">7 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 9-->
+    
+             <div class="card card-body"> <!--INICIA CARD 10-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Ali Shour.webp" alt="image user profile" height="50px" width="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Ali Shour</h6>
+                               <p class="m-0 ms-2">May 1</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">React state management - Part 1: Introduction & local state management</h3>
+                            <div>
+                               <a href="">#react</a>
+                               <a href="">#javascript</a>
+                               <a href="">#webdev</a>
+                               <a href="">#stemanagement</a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 4 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt="">Add Comment</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">7 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 10-->
+    
+          </div> <!--TERMINA PESTAÑA LATEST-->
+    
+    
+          <div class="tab-pane fade" id="top" role="tabpanel" aria-labelledby="top-tab"> <!--INICIA PESTAÑA TOP-->
+             <div class="card card-body"> <!--INICIA CARD 11-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div class="cover-container">
+                            <img class="cover-container__image" src="/images/main/mazdapost.webp" height="250px" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Mazda.webp" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Mazda</h6>
+                               <p class="m-0 ms-2">April 26</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3> <a class="card__tittle" href="" target="_blank">18 GitHub Repositories to Become a CSS Master 🎨🧙‍♂️</a></h3>
+                            <div>
+                               <a href="">#webdev</a>
+                               <a href="">#desing</a>
+                               <a href="">#css</a>
+                               <a href="">#github</a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 377 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt="">11 comments</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">3 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 11-->
+    
+             <div class="card card-body"> <!--INICIA CARD 12-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Arika O.jpg" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Arika O.</h6>
+                               <p class="m-0 ms-2">April 29</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">How web browsers work - parsing the CSS (part 4, with illustrations)⏳🌐</h3>
+                            <div>
+                               <a href="">#showdev</a>
+                               <a href="">#css</a>
+                               <a href="">#html</a>
+                               <a href="">#webdev</a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt="">20 comments</button>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 131 reactions</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">1 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 12-->
+    
+             <div class="card card-body"> <!--INICIA CARD 13-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Nick Taylor.webp" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Nick Taylor (he/him)</h6>
+                               <p class="m-0 ms-2">Apr 28</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">What would you improve at your job?</h3>
+                            <div>
+                               <a class="card__green-bg" href="">#discuss</a>
+                               <a href="">#productivity</a>
+                               <a href=""></a>
+                               <a href=""></a>
+                               <div>
+                                  <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 44 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt=""> 9 comments</button>
+                                     <button class="card__nobg-button card__read-button">1 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 13-->
+    
+             <div class="card card-body"> <!--INICIA CARD 14-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Muthu Annamalai.webp" alt="image user profile" height="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Muthu Annamalai Venkatachalam</h6>
+                               <p class="m-0 ms-2">May 1</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">17 Ridiculously Funny Programming Memes that Every Developer Can Relate To</h3>
+                            <div>
+                               <a class="card__green-bg" href="">#discuss</a>
+                               <a href="">#meme</a>
+                               <a href="">#programming</a>
+                               <a href="">#beginners</a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt="">67 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt="">19 comments</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">4 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 14-->
+    
+             <div class="card card-body"> <!--INICIA CARD 15-->
+                <section class="container">
+                   <div class="row">
+                      <div class="col-12 col-lg-12">
+                         <div>
+                            <img src="" height="" alt="">
+                         </div>
+                         <div class="d-inline-flex">
+                            <img src="/images/main/Melissa Guachun.webp " alt="image user profile" height="50px" width="50px"
+                               style="border-radius: 360px; display: inline-flex;">
+                            <div>
+                               <h6 class="m-0 ms-2">Melissa Guachun</h6>
+                               <p class="m-0 ms-2">Apr 28</p>
+                            </div>
+                         </div>
+                         <div class="ps-5 ms-2">
+                            <h3 class="card__tittle">Common Frontend Interview Questions I've Been Asked</h3>
+                            <div>
+                               <a href="">#webdev</a>
+                               <a href="">#javascript</a>
+                               <a href="">#css</a>
+                               <a href="">#beginners</a>
+                               <div>
+                                  <div class="d-flex justify-content-between">
+                                     <div>
+                                     <button class="card__nobg-button"><img src="/images/main/heart-icon.svg" alt=""> 39 reactions</button>
+                                     <button class="card__nobg-button"><img src="/images/main/coments icon.svg" alt="">Add Comment</button>
+                                   </div>
+                                   <div>
+                                     <button class="card__nobg-button card__read-button">5 min read</button>
+                                     <button class="card__save-button">Save</button>
+                                   </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </section>
+             </div> <!--TERMINA CARD 15-->
+    
+          </div> <!--TERMINA PESTAÑA LATEST-->
+    
+       </div> <!--TERMINA CONTENEDOR DE MAIN-->
 
 
-<!-- SMALL ARTICLE BOX -->
 
 
-<!-- SMALL ARTICLE BOX -->
 
 
-<!-- SMALL ARTICLE BOX -->
+        <!--Section Post -->
+      </main>
 
-
-<!-- SMALL ARTICLE BOX -->
-
-
-<!-- SMALL ARTICLE BOX -->
-
-</main>
-
-      </div>
       <div class="column col-lg-3 d-none d-lg-block">
         <!--Daniel-->
         <!-- CARD UNO -->
@@ -715,6 +1046,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="/js/commons.js"></script>
 
 </html>
 
