@@ -6,10 +6,9 @@
   }
   
 #login_card {
-    width: 50vw;
+    width: 40vw;
     display: flex;
     align-items: start;
-
     padding: 40px;
   }
  
@@ -22,8 +21,9 @@
 }
 
 #submit_button {
-    width: 100%;
-    --bs-btn-font-weight: 700
+    width: 25%;
+    height: 7%;
+    --bs-btn-font-weight: 500
     
 }
 

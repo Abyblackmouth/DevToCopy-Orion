@@ -1,8 +1,15 @@
-const search = window.location.search;
+const search = window.location.search; 
 const url = new URLSearchParams(search);
-console.log(url.get("id"));
+const id = console.log(url.get("id"));
 
-const getPostById = async () =>{
+
+document.addEventListener = ("DOMContentLoaded", () => {
+/* 	const search = window.location.search;
+	const url = new URLSearchParams(search);
+	console.log(url.get("id")); */
+
+	const getPostById = async () =>{
+
     const response = await fetch(`http://localhost:3000/posts/${url.get("id")}`, 
     {
         method: "GET",
@@ -136,3 +143,6 @@ const getPostById = async () =>{
 }
 
 getPostById()
+
+})
+
