@@ -2,18 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardsContainer = document.getElementById("cards-container")
   let cardsHtml = ""
 
-
-
-const imageRota = ( img ) => {
-  img.style.display = 'none'
-  img.onerror = null
-}
-
   fetch("http://localhost:3000/posts")
     .then((response) => response.json())
     .then((posts) => {
       console.log(posts)
       posts.reverse().map((post) => {
+        const id = post._id
       const cardsTemplate = 
       `<div class="card card-body">
         <section class="container">
@@ -31,7 +25,7 @@ const imageRota = ( img ) => {
                 </div>
               </div>
               <div class="ps-5 ms-2">
-                <h3> <a class="card__tittle" href="/pagePost.html" target="_blank">${post.tittle}</a></h3>
+                <h3 class="card__tittle" id="linkPost">${post.tittle}</h3>
                 <div>
                   <a class="card__green-bg" href="">#discuss</a>
                   <a href="">#beginners</a>
@@ -59,7 +53,8 @@ const imageRota = ( img ) => {
     cardsHtml += cardsTemplate
     })
     // Aqui se inserta el codigo html programaticamente
-    cardsContainer.innerHTML = cardsHtml  
+    cardsContainer.innerHTML = cardsHtml
+    
   }).catch((error) => {
     console.log(error)
     // Aqui se inserta el codigo html programaticamente
