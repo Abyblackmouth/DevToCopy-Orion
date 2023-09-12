@@ -1,18 +1,35 @@
-const form = document.forms["form_card"]
-console.log(form);
+const button = document.querySelector('#send-data')
+console.log(button);
 
-form.onsubmit = async (event) => {
+button.addEventListener('click', () => {
     event.preventDefault();
+    const name = document.querySelector('#name')
+    const lastName = document.querySelector('#lastName')
+    const user = document.querySelector('#user')
+    const email = document.querySelector('#email')
+    const password = document.querySelector('#password')
+    const avatar = document.querySelector('#avatar')
+
     const registerData = {
-        name: form.nameInput.value,
-        lastName: form.lastnameInput.value,
-        username: form.usernameInput.value,
-        email: form.emailInput.value,
-        password: form.passwordInput.value
+        name: name.value,
+        lastName: lastName.value,
+        user: user.value,
+        email: email.value,
+        password: password.value,
+        avatar: avatar.value
     }
+    console.log(registerData)
+    createDataUser(registerData)
+})
+
+  const createDataUser = async ( registerData ) => {
     const response = await fetch("http://localhost:3000/singup",{
         method: "POST",
-        body: registerData
+        headers:{
+            "Content-type": "application/json;charset=UTF-8"
+        },
+        body: JSON.stringify(registerData)
     })
     console.log(response.json());
   }
+
