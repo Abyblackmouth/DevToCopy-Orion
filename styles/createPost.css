@@ -1,0 +1,18 @@
+form input {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  border: none;
+}
+form input::-moz-placeholder {
+  font-size: 15px;
+  font-weight: bold;
+}
+form input::placeholder {
+  font-size: 15px;
+  font-weight: bold;
+}
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=createPost.css.map */

@@ -1,3 +1,6 @@
+body {
+  background-color: #c1bebe;
+}
 
 footer {
   background-color: #e5e5e5;
@@ -6,8 +9,7 @@ footer {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .aside__left--margintop {
@@ -40,7 +42,7 @@ footer {
 
 /* Comments Section */
 .comments_button--subscribe {
-  border: solid 1px #afafaf;
+  border: solid 1px rgb(175, 175, 175);
 }
 
 .comments__textarea {
@@ -89,7 +91,7 @@ footer {
 
 /* codigo para el navegador */
 nav__container {
-  border-bottom: solid #cccccc;
+  border-bottom: solid rgb(204, 204, 204);
 }
 
 .button__nav {
@@ -104,17 +106,14 @@ nav__container {
   width: 400px;
   border: solid 1px;
   border-radius: 7px;
-  border-color: #afafaf;
+  border-color: rgb(175, 175, 175);
   padding-left: 10px;
 }
 
 .nav__input--icon {
   margin-left: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .nav__input--profile {
@@ -125,12 +124,12 @@ nav__container {
 }
 
 .aside__list--item :hover {
-  background-color: #dfdafa;
+  background-color: rgb(223, 218, 250);
   text-decoration: underline;
 }
 
 .socialNet-icon {
-  color: #747474;
+  color: rgb(116, 116, 116);
 }
 
 .socialNet-icon:hover {
@@ -139,5 +138,4 @@ nav__container {
 
 .nav__search--input :focus {
   border: none;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

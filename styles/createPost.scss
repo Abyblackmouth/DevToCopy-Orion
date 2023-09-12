@@ -1,0 +1,22 @@
+
+$espaciado-abajo: 10px;
+$tamano-placeholder: 15px;
+$fuente-placeholder: bold;
+
+form{
+    input {
+        margin-bottom: $espaciado-abajo;
+        margin-top: 15px;
+        border: none;
+        &::placeholder {
+          font-size: $tamano-placeholder;
+          font-weight: $fuente-placeholder;
+        }
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }      
+}
+

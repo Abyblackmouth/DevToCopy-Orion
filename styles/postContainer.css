@@ -8,7 +8,7 @@
 .card__save-button {
   background-color: #ffffff;
   border: none;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   width: 2rem;
   height: 2rem;
   font-size: 12px;
@@ -25,7 +25,7 @@
 
 .card__tittle {
   text-decoration: none;
-  color: #171717d8;
+  color: rgba(23, 23, 23, 0.8470588235);
   margin: 0 1rem 1rem 0;
   font-weight: bold;
 }
@@ -48,7 +48,6 @@
 
 .card__post-tittle {
   font-size: 3rem;
-  -webkit-transition: ease;
   transition: ease;
 }
 
@@ -60,8 +59,7 @@
 .card-body:hover {
   border-color: #3b49df;
   border-width: 2px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cover-container {
@@ -70,53 +68,45 @@
 
 a {
   text-decoration: none;
-  color: #171717d8;
+  color: rgba(23, 23, 23, 0.8470588235);
   margin: 0 1rem 1rem 0;
 }
 
 .card__green-bg {
   background-color: rgba(26, 214, 67, 0.1);
   border-color: rgba(214, 54, 26, 0.87);
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 .card__green-bg:hover {
   background-color: rgba(26, 214, 67, 0.584);
 }
-
 .card__green-bg:hover .card {
   margin-bottom: 1rem;
 }
-
 .card__green-bg:hover .card .card__tags {
   background-color: #ffffff;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-right: 1rem;
 }
-
 .card__green-bg:hover .card .card__btn-aux {
   margin-right: 1rem;
   border-color: #ffffff;
   background-color: #ffffff;
   color: #171717;
 }
-
 .card__green-bg:hover .card__btn-submit {
   margin-right: 1rem;
   background-color: #3b49df;
 }
-
 .card__green-bg:hover__username-container h6 {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .card__green-bg:hover__username-container h6:hover {
   color: #4649df;
 }
-
 .card__green-bg:hover__username-container a:hover {
   color: #4649df;
-}
-/*# sourceMappingURL=postContainer.css.map */
+}/*# sourceMappingURL=postContainer.css.map */
