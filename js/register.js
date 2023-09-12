@@ -1,4 +1,3 @@
-import { BADHINTS } from "dns";
 
 const form = document.forms["form_card"]
 console.log(form);
@@ -12,7 +11,7 @@ form.onsubmit = async (event) => {
         email: form.emailInput.value,
         password: form.passwordInput.value
     }
-    const response = await fetch("http://localhost:3002/singup",{
+    const response = await fetch("http://localhost:3000/singup",{
         method: "POST",
         body: registerData
     })

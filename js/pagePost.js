@@ -1,13 +1,12 @@
-/* const search = window.location.search;
-const url = new URLSearchParams(search);
-console.log(url.get("id")); */
 
 document.addEventListener("DOMContentLoaded", () => {
+  const blogContainer = document.getElementById("blog-container")
+  let blogHtml = ""
 
 	const getPostById = async () =>{
-    const search = window.location.search;
-const url = new URLSearchParams(search);
-console.log(url.get("id"));
+  const search = window.location.search;
+  const url = new URLSearchParams(search);
+  console.log(url.get("id"));
 
     const response = await fetch(`http://localhost:3000/posts/${url.get("id")}`, 
     {
@@ -139,7 +138,14 @@ console.log(url.get("id"));
     </article>
 </main>`
 
+blogHtml += blogTemplate
+
 }
+ blogContainer.innerHTML = blogHtml
+
+
+
+
 
 getPostById()
 
