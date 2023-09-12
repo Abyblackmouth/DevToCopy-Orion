@@ -30,6 +30,7 @@ button.addEventListener('click', () => {
         },
         body: JSON.stringify(registerData)
     })
-    console.log(response.json());
+    const data = await response.json();
+    console.log(data)
   }
 
